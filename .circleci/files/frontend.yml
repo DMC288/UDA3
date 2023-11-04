@@ -1,5 +1,5 @@
 Description: >
-  CuongDM4-Project3 frontend stack.
+  cuongdm4-project3 frontend stack.
 
 Parameters:
   ID:
@@ -10,7 +10,7 @@ Resources:
   WebsiteBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub "CuongDM4-Project3-${ID}"
+      BucketName: !Sub "cuongdm4-project3-${ID}"
       # AccessControl: PublicRead
       PublicAccessBlockConfiguration:
         BlockPublicAcls: false

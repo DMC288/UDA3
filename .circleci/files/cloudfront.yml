@@ -1,5 +1,5 @@
 Description: >
-  Cloudfront distribution for CuongDM4-Project3.
+  Cloudfront distribution for cuongdm4-project3.
 
 Parameters:
   WorkflowID:
@@ -20,7 +20,7 @@ Resources:
     Properties:
       DistributionConfig:
         Origins:
-          - DomainName: !Sub "CuongDM4-Project3-${WorkflowID}.s3.amazonaws.com"
+          - DomainName: !Sub "cuongdm4-project3-${WorkflowID}.s3.amazonaws.com"
             Id: webpage
             S3OriginConfig:
               OriginAccessIdentity: !Sub "origin-access-identity/cloudfront/${CloudFrontOriginAccessIdentity}"
