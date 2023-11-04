@@ -1,5 +1,5 @@
 Description: >
-  UdaPeople frontend stack.
+  CuongDM4-Project3 frontend stack.
 
 Parameters:
   ID:
@@ -10,7 +10,7 @@ Resources:
   WebsiteBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub "udapeople-${ID}"
+      BucketName: !Sub "CuongDM4-Project3-${ID}"
       # AccessControl: PublicRead
       PublicAccessBlockConfiguration:
         BlockPublicAcls: false
