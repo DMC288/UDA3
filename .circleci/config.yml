@@ -20,7 +20,7 @@ commands:
     steps:
       - run:
           name: Revert migrations
-          # Add when this will run 2
+          # Add when this will run 3
           command: |
             # Curl command here to see if there was a successful migration associated with the workflow id, store result in SUCCESS variable
             SUCCESS = 1
