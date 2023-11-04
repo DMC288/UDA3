@@ -54,6 +54,7 @@ export class ConfigService {
       TYPEORM_LOGGING: Joi.string().default('false'),
       // AUTH0_DOMAIN: Joi.string().required(),
       // AUTH0_AUDIENCE: Joi.string().required(),
+      ssl: true,
     }).unknown();
     const { error, value: validatedEnvConfig } = envVarsSchema.validate(
       envConfig,
@@ -109,6 +110,7 @@ export class ConfigService {
       logging: this.envConfig.TYPEORM_LOGGING === 'true',
       extra: { max: 4, min: 1 },
       synchronize: false,
+      ssl: true,
     };
   }
 
